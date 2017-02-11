@@ -118,7 +118,7 @@ class CFMSDataTreater():
         than threshold are marked for cleaning.
         '''
         self.print_log("Cleaning data lists from spurious peaks.")
-        B, M = self.get_BM(supress_log=True)
+        B, M = self.get_BM(get_all_points=True, supress_log=True)
         M_mean = spsig.medfilt(M, M_npts_mean)
         B_mean = spsig.medfilt(B, B_npts_mean)
         M_diff = M-M_mean
@@ -148,7 +148,7 @@ class CFMSDataTreater():
             ax.legend(loc='best')
             fig.tight_layout()         
             plt.show()
-        self.data_container.valid_point = np.logical_and(self.data_container.valid_point, -invalid_points)
+        self.data_container.set_data_invalid(invalid_points)
         self.print_log('Set array for validated points')
 
     def remove_virgin_data(self, up_to=6.9):
@@ -166,26 +166,25 @@ class CFMSDataTreater():
                     valid_point[ib] = False
                 else:
                     break
-        self.data_container.valid_point =\
-                    np.logical_and(self.data_container.valid_point, valid_point)
+        self.data_container.set_data_invalid(-valid_point)
 
     def fit_diamagnetism(self, B0, B1):
         pass
 
-    def get_BM(self, supress_log=False):
+    def get_BM(self, get_all_points=False, supress_log=False):
         if not supress_log:
             self.print_log('Loading ' + self.data_container.B_string + ' and ' +\
                                     self.data_container.M_string)
-        B = self.data_container.get_B()
-        M = self.data_container.get_M()
+        B = self.data_container.get_B(get_all_points)
+        M = self.data_container.get_M(get_all_points)
         return B, M
 
-    def get_TM(self, supress_log=False):
+    def get_TM(self, get_all_points=False, supress_log=False):
         if not supress_log:
             self.print_log('Loading ' + self.data_container.T_string + ' and ' +\
                                     self.data_container.M_string)
-        T = self.data_container.get_T()
-        M = self.data_container.get_M()
+        T = self.data_container.get_T(get_all_points)
+        M = self.data_container.get_M(get_all_points)
         return T, M
         
     def get_BMavg(self):

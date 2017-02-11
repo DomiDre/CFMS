@@ -39,6 +39,13 @@ class CFMSData():
         self.N_pts_averaged = len(self.averaged_data[self.B_string][0])
         self.data_averaged = True
 
+    def set_data_invalid(self, invalid_points):
+        if len(invalid_points) != self.N_pts:
+            print('WARNING: Trying to set data (Pts: '+str(self.N_pts)+\
+                  ') invalid with array that has length ' +\
+                  str(len(invalid_points)))
+        self.valid_point = np.logical_and(self.valid_point, -invalid_points)
+
     def check_data_loaded(self, data_string):
         if not data_string in self.data:
             sys.exit("ERROR: Unable to find " + data_string + " in data.")
