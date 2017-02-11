@@ -47,17 +47,26 @@ class CFMSData():
         if not data_string in self.averaged_data:
             sys.exit("ERROR: Unable to find " + data_string + " in averaged data.")
 
-    def get_B(self):
+    def get_B(self, get_all_points=False):
         self.check_data_loaded(self.B_string)
-        return self.data[self.B_string][self.valid_point]
+        if get_all_points:
+            return self.data[self.B_string]
+        else:
+            return self.data[self.B_string][self.valid_point]
 
-    def get_M(self):
+    def get_M(self, get_all_points=False):
         self.check_data_loaded(self.M_string)
-        return self.data[self.M_string][self.valid_point]
+        if get_all_points:
+            return self.data[self.M_string]
+        else:
+            return self.data[self.M_string][self.valid_point]
 
-    def get_T(self):
+    def get_T(self, get_all_points=False):
         self.check_data_loaded(self.T_string)
-        return self.data[self.T_string][self.valid_point]
+        if get_all_points:
+            return self.data[self.T_string]
+        else:
+            return self.data[self.T_string][self.valid_point]
 
     def get_Bavg(self):
         self.check_average_data_loaded(self.B_string)

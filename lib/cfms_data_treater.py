@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.signal as spsig
 import warnings
+
 class CFMSDataTreater():
     def __init__(self):
         self.data_container = CFMSData()
@@ -147,8 +148,29 @@ class CFMSDataTreater():
             ax.legend(loc='best')
             fig.tight_layout()         
             plt.show()
-        self.data_container.valid_point = -invalid_points
+        self.data_container.valid_point = np.logical_and(self.data_container.valid_point, -invalid_points)
         self.print_log('Set array for validated points')
+
+    def remove_virgin_data(self, up_to=6.9):
+        B = self.data_container.get_B(get_all_points=True)
+        valid_point = np.ones(len(B), dtype=bool)
+        if up_to > 0:
+            for ib, b_val in enumerate(B):
+                if b_val < up_to:
+                    valid_point[ib] = False
+                else:
+                    break
+        else:
+            for ib, b_val in enumerate(B):
+                if b_val > up_to:
+                    valid_point[ib] = False
+                else:
+                    break
+        self.data_container.valid_point =\
+                    np.logical_and(self.data_container.valid_point, valid_point)
+
+    def fit_diamagnetism(self, B0, B1):
+        pass
 
     def get_BM(self, supress_log=False):
         if not supress_log:
