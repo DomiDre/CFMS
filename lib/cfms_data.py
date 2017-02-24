@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 class CFMSData():
     '''
     Container class for storing and retrieving CFMS data.
@@ -23,6 +24,8 @@ class CFMSData():
 
         self.valid_point = None # Array which points are valid and which not (filled from clean_peaks)
 
+        self.diamagnetic_fit = None # lmfit MinimizerResult object
+        self.do_diamagnetic_correction = False
 
     def set_data(self, header, data):
         self.header = header
@@ -46,6 +49,10 @@ class CFMSData():
                   str(len(invalid_points)))
         self.valid_point = np.logical_and(self.valid_point, -invalid_points)
 
+    def set_diamagnetic_fit(self, diamagnetic_fit):
+        self.diamagnetic_fit = diamagnetic_fit
+        self.do_diamagnetic_correction = True
+
     def check_data_loaded(self, data_string):
         if not data_string in self.data:
             sys.exit("ERROR: Unable to find " + data_string + " in data.")
@@ -54,26 +61,29 @@ class CFMSData():
         if not data_string in self.averaged_data:
             sys.exit("ERROR: Unable to find " + data_string + " in averaged data.")
 
-    def get_B(self, get_all_points=False):
-        self.check_data_loaded(self.B_string)
+    def get(self, string, get_all_points=False):
+        self.check_data_loaded(string)
         if get_all_points:
-            return self.data[self.B_string]
+            return self.data[string]
         else:
-            return self.data[self.B_string][self.valid_point]
+            return self.data[string][self.valid_point]
+
+    def get_B(self, get_all_points=False):
+        return self.get(self.B_string)
 
     def get_M(self, get_all_points=False):
         self.check_data_loaded(self.M_string)
         if get_all_points:
-            return self.data[self.M_string]
+            M_values = self.data[self.M_string]
         else:
-            return self.data[self.M_string][self.valid_point]
+            M_values = self.data[self.M_string][self.valid_point]
+        if self.do_diamagnetic_correction:
+            M_values -= self.diamagnetic_fit.params['m'].value*\
+                        self.get_B(get_all_points)
+        return M_values
 
     def get_T(self, get_all_points=False):
-        self.check_data_loaded(self.T_string)
-        if get_all_points:
-            return self.data[self.T_string]
-        else:
-            return self.data[self.T_string][self.valid_point]
+        return self.get(self.T_string)
 
     def get_Bavg(self):
         self.check_average_data_loaded(self.B_string)
