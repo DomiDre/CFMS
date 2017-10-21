@@ -1,9 +1,10 @@
-from .cfms_data import CFMSData
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.signal as spsig
 import warnings
 import lmfit
+
+from .cfms_data import CFMSData
 
 class CFMSDataTreater():
     def __init__(self):
@@ -134,9 +135,9 @@ class CFMSDataTreater():
         B_masked = B[invalid_points]
         M_masked = M[invalid_points]
         T_masked = T[invalid_points]
-        B_clean = B[-invalid_points]
-        M_clean = M[-invalid_points]
-        T_clean = T[-invalid_points]
+        B_clean = B[~invalid_points]
+        M_clean = M[~invalid_points]
+        T_clean = T[~invalid_points]
         if show:
             self.fig, self.ax = plt.subplots()
             self.ax.axhline(0, c='gray')
@@ -289,6 +290,13 @@ class CFMSDataTreater():
         data = self.data_container.get(string, get_all_points)
         return data
 
+    def get_B(self, get_all_points=False, supress_log=False):
+        return self.get(self.data_container.B_string, get_all_points, supress_log)
+    def get_T(self, get_all_points=False, supress_log=False):
+        return self.get(self.data_container.T_string, get_all_points, supress_log)
+    def get_M(self, get_all_points=False, supress_log=False):
+        return self.get(self.data_container.M_string, get_all_points, supress_log)
+    
     def get_BM(self, get_all_points=False, supress_log=False):
         if not supress_log:
             self.print_log('Loading ' + self.data_container.B_string + ' and ' +\
@@ -356,7 +364,29 @@ class CFMSDataTreater():
         saveplot = self.data_container.data_path.rsplit(".",1)[0] + "_TM.png"
         self.fig.saveself.fig(saveplot)
         print("Saved plot to " + saveplot)
+
+    def export(self, export_file=None):
+        if export_file is None:
+            export_file = self.data_container.data_path.rsplit(".",1)[0]+"_extracted.xye"
+        
+        B = self.get_B(get_all_points=True, supress_log=True)
+        M = self.get_M(get_all_points=True, supress_log=True)
+        T = self.get_T(get_all_points=True, supress_log=True)
+        valid_points = self.data_container.get_valid_points()
+        self.print_log("Exporting data to " + export_file)
+        savefile = open(export_file, "w")
+        
+        savefile.write(self.log)
+        savefile.write("#\n#B / T\tM / memu\tT / K\n")
+        for i in range(len(B)):
+            if not valid_points[i]:
+                savefile.write('#')
+            savefile.write(str(B[i]) + "\t" +\
+                       str(M[i]) + "\t" +\
+                       str(T[i]) + "\n")
+        savefile.close()
     
+
     def export_avg(self, export_file=None):
         if export_file is None:
             export_file = self.data_container.data_path.rsplit(".",1)[0]+"_extracted.xye"

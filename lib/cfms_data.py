@@ -1,10 +1,8 @@
 import numpy as np
 import sys
 class CFMSData():
-    '''
-    Container class for storing and retrieving CFMS data.
-    '''
     def __init__(self):
+        #Container class for storing and retrieving CFMS data.
         self.data_path = ''
 
         #Datafiles: first line is header. 
@@ -47,7 +45,7 @@ class CFMSData():
             print('WARNING: Trying to set data (Pts: '+str(self.N_pts)+\
                   ') invalid with array that has length ' +\
                   str(len(invalid_points)))
-        self.valid_point = np.logical_and(self.valid_point, -invalid_points)
+        self.valid_point = np.logical_and(self.valid_point, ~invalid_points)
 
     def set_diamagnetic_fit(self, diamagnetic_fit):
         self.diamagnetic_fit = diamagnetic_fit
@@ -97,3 +95,5 @@ class CFMSData():
         self.check_average_data_loaded(self.T_string)
         return self.averaged_data[self.T_string]
 
+    def get_valid_points(self):
+        return self.valid_point
