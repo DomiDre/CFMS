@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:UML="http://schema.omg.org/spec/UML/1.3" timestamp="2017-10-21T12:31:09" verified="false" xmi.version="1.2">
+ <XMI.header>
+  <XMI.documentation>
+   <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
+   <XMI.exporterVersion>1.6.9</XMI.exporterVersion>
+   <XMI.exporterEncoding>UnicodeUTF8</XMI.exporterEncoding>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name="UML" xmi.version="1.3" href="UML.xml"/>
+ </XMI.header>
+ <XMI.content>
+  <UML:Model isAbstract="false" isSpecification="false" name="UML Model" xmi.id="m1" isLeaf="false" isRoot="false">
+   <UML:Namespace.ownedElement>
+    <UML:Stereotype isAbstract="false" namespace="m1" isSpecification="false" name="folder" xmi.id="folder" isLeaf="false" isRoot="false" visibility="public"/>
+    <UML:Stereotype isAbstract="false" namespace="m1" isSpecification="false" name="datatype" xmi.id="datatype" isLeaf="false" isRoot="false" visibility="public"/>
+    <UML:Model stereotype="folder" isAbstract="false" namespace="m1" isSpecification="false" name="Logical View" xmi.id="Logical View" isLeaf="false" isRoot="false" visibility="public">
+     <UML:Namespace.ownedElement>
+      <UML:Package stereotype="folder" isAbstract="false" namespace="Logical View" isSpecification="false" name="Datatypes" xmi.id="Datatypes" isLeaf="false" isRoot="false" visibility="public">
+       <UML:Namespace.ownedElement>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="int" xmi.id="6MebLl1Ek9lq" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="char" xmi.id="GrGy0Bp3JDNt" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="bool" xmi.id="bAqHwrn1DRcW" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="float" xmi.id="AbivjTlxI0vI" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="double" xmi.id="9iJRvhKUrAjm" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="short" xmi.id="1XlCwLj7vR0e" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="long" xmi.id="tlb9jUStAlK3" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="unsigned int" xmi.id="QeXGoH0nmlzi" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="unsigned short" xmi.id="6gn16ndzXC8G" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="unsigned long" xmi.id="eY9oITrg5Pwr" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="string" xmi.id="eueQfe6kKulO" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="array" xmi.id="hNNEZUTE0c0I" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="tuple" xmi.id="4sz9Ft1todJR" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="dict" xmi.id="FNBYHvwxIK9p" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="object" xmi.id="mc3mF23Hu0O9" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="set" xmi.id="tP0f1H5GeGow" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="*double, *double, *double, *double" xmi.id="W5aPuGOla1IM" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="double[*]" xmi.id="sMqKb1jahREt" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="double[*], double[*], double[*], double[*]" xmi.id="TE86II4nMeAG" isLeaf="false" isRoot="false" visibility="public"/>
+        <UML:DataType stereotype="datatype" isAbstract="false" namespace="Datatypes" isSpecification="false" name="double[*], double[*]" xmi.id="sW1TVHnMddgC" isLeaf="false" isRoot="false" visibility="public"/>
+       </UML:Namespace.ownedElement>
+      </UML:Package>
+      <UML:Class isAbstract="false" namespace="Logical View" isSpecification="false" name="CFMS" xmi.id="9ltR32HpdIZq" isLeaf="false" isRoot="false" visibility="public">
+       <UML:GeneralizableElement.generalization>
+        <UML:Generalization xmi.idref="aC8FRx9ag02j"/>
+       </UML:GeneralizableElement.generalization>
+      </UML:Class>
+      <UML:Generalization namespace="Logical View" isSpecification="false" parent="Kc7CcVLUtJ7u" name="" xmi.id="aC8FRx9ag02j" discriminator="" visibility="public" child="9ltR32HpdIZq"/>
+      <UML:Class isAbstract="false" namespace="Logical View" isSpecification="false" name="CFMSDataTreater" xmi.id="Kc7CcVLUtJ7u" isLeaf="false" isRoot="false" visibility="public">
+       <UML:GeneralizableElement.generalization>
+        <UML:Generalization xmi.idref="cdPhDVotQjKF"/>
+       </UML:GeneralizableElement.generalization>
+       <UML:Classifier.feature>
+        <UML:Attribute isSpecification="false" type="QOUQ0IZiF5QE" name="data_container" xmi.id="zjINTadCas9k" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="eueQfe6kKulO" name="log" xmi.id="Fa4pQDXfOctt" visibility="public"/>
+        <UML:Operation isAbstract="false" isSpecification="false" name="__init__" xmi.id="ue4ae4HeJnIq" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="eueQfe6kKulO" kind="return" xmi.id="rliXKlnO9YLo"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="add_log" xmi.id="O84Q5ZsyBuWp" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="entry" xmi.id="ymSFZk5QTovn" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="print_log" xmi.id="6taIn65jsXyQ" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="entry" xmi.id="F4ohqkSNTc1i" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" comment="&quot;) or linestrip == &quot;&quot;:" isSpecification="false" name="load" xmi.id="vQnmwlABnysb" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="data_path" xmi.id="gLw9vxrxPCaN" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="reduce_averages" xmi.id="NSFAO8m5RgEK" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="6MebLl1Ek9lq" value="" name="N_averages" xmi.id="LIwGu2HCa3DT" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" comment="he doesnt like circ and mu in my Ubuntuhe doesnt like circ and mu in my Ubuntu" isSpecification="false" name="clean_peaks" xmi.id="6I1VyGpaI6bU" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="6MebLl1Ek9lq" value="20e-3" name="M_threshold" xmi.id="0Fd0K26uzkG1" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="6MebLl1Ek9lq" value="11" name="M_npts_mean" xmi.id="czfM4Kw42i7u" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="6MebLl1Ek9lq" value="0.1" name="B_threshold" xmi.id="2jo5sXbEJw68" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="6MebLl1Ek9lq" value="5" name="B_npts_mean" xmi.id="NoNsoQHrlsU8" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="TM_mode" xmi.id="4A56sAz5r5ZT" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="True" name="show" xmi.id="ICQplTcmgEky" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="remove_virgin_data" xmi.id="ey0u5aOzWcZB" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="6MebLl1Ek9lq" value="6.9" name="up_to" xmi.id="CB2QQiVpIc6y" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="fit_diamagnetism" xmi.id="14CXfmi2F5cR" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="9iJRvhKUrAjm" value="" name="B0" xmi.id="K0MD5JeFUhgu" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="9iJRvhKUrAjm" value="" name="B1" xmi.id="A6yCIjkah4nn" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="9iJRvhKUrAjm" value="None" name="m_init" xmi.id="EhgmBvGM0EWI" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="9iJRvhKUrAjm" value="None" name="b_init" xmi.id="yHqfJbQh0RW5" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="True" name="vary_m" xmi.id="5EUvfZUrE8dQ" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="True" name="vary_b" xmi.id="3rk36GJ2V9fp" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="True" name="fit_both_sides" xmi.id="k4UjVyoYCGRp" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="True" name="show" xmi.id="qvh21IQ3AA6E" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_diamagnetic_slope" xmi.id="M2UiDPk80nGf" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="9iJRvhKUrAjm" kind="return" xmi.id="TqZWoTSeonAW"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_diamagnetic_offset" xmi.id="bWqJYwOswsY9" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="9iJRvhKUrAjm" kind="return" xmi.id="HIFF6TuXJR25"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_diamagnetic_slope" xmi.id="tUjhFtDoP48v" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="9iJRvhKUrAjm" value="" name="slope" xmi.id="8jxIzO8nInoH" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get" xmi.id="fsi5woysIkke" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="k9F3rxftitXf"/>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="string" xmi.id="TIUORPlX8iq6" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="get_all_points" xmi.id="JLz4xZLOrpkJ" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="supress_log" xmi.id="DVoJBePGaHYH" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_B" xmi.id="vqIiJtbyZWKz" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="8u6olcSgQkOi"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="get_all_points" xmi.id="YmcNZNemsT42" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="supress_log" xmi.id="5RIggovbxxN0" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_T" xmi.id="dygBU0AaaHA3" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="jct8MFqzDW8g"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="get_all_points" xmi.id="0wDQnyZqh93k" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_M" xmi.id="VJG3YO63TOvj" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="el8sFGWkXmn6"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="get_all_points" xmi.id="7lmHqoHavO5x" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_BM" xmi.id="Bs9cG2JAyMW2" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sW1TVHnMddgC" kind="return" xmi.id="uTRRECXN4fzK"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="get_all_points" xmi.id="9OiJ1ms3yuNX" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_TM" xmi.id="fHTedxgDzTaS" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sW1TVHnMddgC" kind="return" xmi.id="uYTwBRFriiTL"/>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="False" name="get_all_points" xmi.id="B6XcjTIduh36" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_BMavg" xmi.id="f7Wca54lBZNs" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="TE86II4nMeAG" kind="return" xmi.id="0dWtLXzD5T9F"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_TMavg" xmi.id="sO6a4ZvhgPJE" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="TE86II4nMeAG" kind="return" xmi.id="ULxdtKWtv0mE"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="plot_B_M" xmi.id="XmRaDZn5xtf0" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+        <UML:Operation isAbstract="false" isSpecification="false" name="plot_B_M_avg" xmi.id="XX7TXrh2d7bo" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+        <UML:Operation isAbstract="false" isSpecification="false" name="plot_T_M" xmi.id="I1MeFNsktxBO" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+        <UML:Operation isAbstract="false" comment="\n#B / T\tM / memu\tT / K\n&quot;)')" isSpecification="false" name="export" xmi.id="cpFf8ybQxv2C" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="None" name="export_file" xmi.id="jaDmnOyRMXsM" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" comment="\n#B / T\tsB / T\tM / memu\tsM / memu\tT / K\tsT / K\n&quot;)" isSpecification="false" name="export_avg" xmi.id="1D6y889O14Yo" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="None" name="export_file" xmi.id="d0bR2vSigReF" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="show" xmi.id="ixWhz2W74yD1" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class isAbstract="false" namespace="Logical View" isSpecification="false" name="CFMSData" xmi.id="QOUQ0IZiF5QE" isLeaf="false" isRoot="false" visibility="public">
+       <UML:GeneralizableElement.generalization>
+        <UML:Generalization xmi.idref="WA94onjJgQGy"/>
+       </UML:GeneralizableElement.generalization>
+       <UML:Classifier.feature>
+        <UML:Attribute isSpecification="false" type="dOEz1MEtsDMN" name="header" xmi.id="n0hJmjSBRog1" initialValue="[]" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="FNBYHvwxIK9p" name="data" xmi.id="9qJbnkvFD68M" initialValue="{}" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="6MebLl1Ek9lq" name="N_pts" xmi.id="tb0kEpw0nbJZ" initialValue="0" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="bAqHwrn1DRcW" name="data_loaded" xmi.id="qHB2uQj2P1iS" initialValue="False" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="FNBYHvwxIK9p" name="averaged_data" xmi.id="ojellF3SlGfb" initialValue="{}" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="6MebLl1Ek9lq" name="N_pts_averaged" xmi.id="EXYwYiOMxaNr" initialValue="0" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="eueQfe6kKulO" name="B_string" xmi.id="y6tN8couJSd4" initialValue="'B_analog_(T)'" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="eueQfe6kKulO" name="T_string" xmi.id="fgXQxC09hY3D" initialValue="'sensor_B_(K)'" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="eueQfe6kKulO" name="M_string" xmi.id="EPZCzw3w1vH7" initialValue="'moment_(emu)'" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="bAqHwrn1DRcW" name="data_averaged" xmi.id="V5zoVatBFObC" initialValue="False" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="0aoJVHyIpFxa" name="valid_point" xmi.id="YZJF6MSKlzUj" initialValue="None" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="EuLk2hlR12dZ" name="diamagnetic_fit" xmi.id="uWdtRuyuyxgT" initialValue="None" visibility="public"/>
+        <UML:Attribute isSpecification="false" type="bAqHwrn1DRcW" name="do_diamagnetic_correction" xmi.id="VZckvEuRlDer" initialValue="False" visibility="public"/>
+        <UML:Operation isAbstract="false" comment="Container class for storing and retrieving CFMS data.Datafiles: first line is header. For each entry in header is a list of numbers in dataaveraged over every n-th point Array which points are valid and which not (filled from clean_peaks) lmfit MinimizerResult object" isSpecification="false" name="__init__" xmi.id="5wJ9sVALi1bQ" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_data" xmi.id="yzKB2kN8ehHV" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="dOEz1MEtsDMN" value="" name="header" xmi.id="V7j6kNJPj1lW" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="FNBYHvwxIK9p" value="" name="data" xmi.id="76LxJgLmn2tY" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_averaged_data" xmi.id="dBx0rq0pu1Pd" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="6MebLl1Ek9lq" value="" name="N_averages" xmi.id="RrnsbdKijge1" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="sMqKb1jahREt" value="" name="Bavg" xmi.id="G39qQRjqHVgq" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="sMqKb1jahREt" value="" name="Tavg" xmi.id="mYIhlk0Pt7HX" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="sMqKb1jahREt" value="" name="Mavg" xmi.id="JoQ7Or5duFTJ" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_data_invalid" xmi.id="8nq5xfFFlnsf" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="0aoJVHyIpFxa" value="" name="invalid_points" xmi.id="xxxo2CLsBcXL" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_diamagnetic_fit" xmi.id="crYLdO0L9Ai1" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="EuLk2hlR12dZ" value="" name="diamagnetic_fit" xmi.id="IP1R8Ic2td55" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="check_data_loaded" xmi.id="5sCC3sEoZS5P" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="data_string" xmi.id="dUffWICmhDDo" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="check_average_data_loaded" xmi.id="hgOE6Reegpvo" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="data_string" xmi.id="zOMEakQAIDyT" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get" xmi.id="ntZShSGgoasO" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="string" xmi.id="KHYaUU4L3nkP" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="" name="get_all_points" xmi.id="baApVu68Ollt" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_B" xmi.id="q1ptmXHiGjUJ" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="rMJtiGNYHCP2"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="get_all_points" xmi.id="y4IdfyCMYO8K" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_M" xmi.id="igkwOEFnNKkk" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="29rHJGH1v1xJ"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="get_all_points" xmi.id="BZRkLJrJO7u1" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_T" xmi.id="DA4aTnK9j7gl" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="PPoKQjbesgCL"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="False" name="get_all_points" xmi.id="Gf777HfGo5z9" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_Bavg" xmi.id="TVSAa9tyFVx7" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="rFzMQ78oUu8u"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_Mavg" xmi.id="ckWUOhnrCFzm" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="OsjeNejEuhYK"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_Tavg" xmi.id="og8IZFABxfdL" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="sMqKb1jahREt" kind="return" xmi.id="MQAWf9G21zeM"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_valid_points" xmi.id="eLYY26qokx6J" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter type="0aoJVHyIpFxa" kind="return" xmi.id="CFS7s5SCTci7"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Generalization namespace="Logical View" isSpecification="false" parent="QOUQ0IZiF5QE" name="" xmi.id="cdPhDVotQjKF" discriminator="" visibility="public" child="Kc7CcVLUtJ7u"/>
+      <UML:Class isAbstract="false" namespace="Logical View" isSpecification="false" name="boo" xmi.id="Mlrj4ZGDBf4b" isLeaf="false" isRoot="false" visibility="public"/>
+      <UML:Class isAbstract="false" namespace="Logical View" isSpecification="false" name="list" xmi.id="dOEz1MEtsDMN" isLeaf="false" isRoot="false" visibility="public"/>
+      <UML:Class isAbstract="false" namespace="Logical View" isSpecification="false" name="bool[*]" xmi.id="0aoJVHyIpFxa" isLeaf="false" isRoot="false" visibility="public"/>
+      <UML:Class isAbstract="false" namespace="Logical View" isSpecification="false" name="obj" xmi.id="EuLk2hlR12dZ" isLeaf="false" isRoot="false" visibility="public"/>
+      <UML:Generalization namespace="Logical View" isSpecification="false" parent="Kc7CcVLUtJ7u" name="" xmi.id="WA94onjJgQGy" discriminator="" visibility="public" child="QOUQ0IZiF5QE"/>
+      <UML:Class isAbstract="false" namespace="Logical View" isSpecification="false" name="CFMSData_1" xmi.id="hQNmLKQu65g1" isLeaf="false" isRoot="false" visibility="public">
+       <UML:Classifier.feature>
+        <UML:Attribute isSpecification="false" type="dOEz1MEtsDMN" name="header" xmi.id="8hSLptMj5fHg" initialValue="[]" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="FNBYHvwxIK9p" name="data" xmi.id="GlYYVRxDsIxB" initialValue="{}" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="6MebLl1Ek9lq" name="N_pts" xmi.id="bN5fTjgZQ8uE" initialValue="0" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="bAqHwrn1DRcW" name="data_loaded" xmi.id="zGv4vAj9vHhR" initialValue="False" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="FNBYHvwxIK9p" name="averaged_data" xmi.id="gccYtZhUxl9O" initialValue="{}" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="6MebLl1Ek9lq" name="N_pts_averaged" xmi.id="Unxttr5s50w1" initialValue="0" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="eueQfe6kKulO" name="B_string" xmi.id="Ad85sqUZQ47H" initialValue="'B_analog_(T)'" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="eueQfe6kKulO" name="T_string" xmi.id="enlZYsv2fstW" initialValue="'sensor_B_(K)'" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="eueQfe6kKulO" name="M_string" xmi.id="hyOmwJl6wuAp" initialValue="'moment_(emu)'" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="bAqHwrn1DRcW" name="data_averaged" xmi.id="icO8hTQJE9sm" initialValue="False" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="0aoJVHyIpFxa" name="valid_point" xmi.id="0nnddgAKdY4Z" initialValue="None" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="EuLk2hlR12dZ" name="diamagnetic_fit" xmi.id="rqemkmbSOxY3" initialValue="None" visibility="private"/>
+        <UML:Attribute isSpecification="false" type="bAqHwrn1DRcW" name="do_diamagnetic_correction" xmi.id="OwMd6CP4zAha" initialValue="False" visibility="private"/>
+        <UML:Operation isAbstract="false" comment="Container class for storing and retrieving CFMS data.Datafiles: first line is header. For each entry in header is a list of numbers in dataaveraged over every n-th point Array which points are valid and which not (filled from clean_peaks) lmfit MinimizerResult object" isSpecification="false" name="__init__" xmi.id="ppuSMxzDndxX" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_data" xmi.id="PWxmTVpsSATW" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="dOEz1MEtsDMN" value="" name="header" xmi.id="MqYK1Fuo3nEP" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="FNBYHvwxIK9p" value="" name="data" xmi.id="kDaVrY0E4vyW" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_averaged_data" xmi.id="QmMqwpKGfsYe" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="6MebLl1Ek9lq" value="" name="N_averages" xmi.id="6RQ9EeWws6Ph" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="sMqKb1jahREt" value="" name="Bavg" xmi.id="cPthKsBieXXY" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="sMqKb1jahREt" value="" name="Tavg" xmi.id="MpmziLcmm2ty" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="sMqKb1jahREt" value="" name="Mavg" xmi.id="fPsXTHC6e3lw" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_data_invalid" xmi.id="vwcXT93nxqkf" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="0aoJVHyIpFxa" value="" name="invalid_points" xmi.id="9KPtNIr0fhX8" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="set_diamagnetic_fit" xmi.id="whEakzUev69M" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="EuLk2hlR12dZ" value="" name="diamagnetic_fit" xmi.id="EB7B1qo8AD1V" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="check_data_loaded" xmi.id="TsV8X0GThT1Q" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="data_string" xmi.id="QV2KZBgnMmwL" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="check_average_data_loaded" xmi.id="ciTmvSIMInSp" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="data_string" xmi.id="mhIRAHramruK" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get" xmi.id="3Z5NL2hvk8he" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="eueQfe6kKulO" value="" name="string" xmi.id="bxytjRhV8xwG" visibility="private"/>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="" name="get_all_points" xmi.id="Fmq1djJeGP0b" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_B" xmi.id="PhW7nBjO9iGq" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="" name="get_all_points" xmi.id="9vLFsFV71J7d" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_M" xmi.id="0QHGpHpEwLKk" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="" name="get_all_points" xmi.id="V36clKSsFl58" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_T" xmi.id="0aD0sKdsls7Y" isLeaf="false" isQuery="false" isRoot="false" visibility="public">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter isSpecification="false" type="bAqHwrn1DRcW" value="" name="get_all_points" xmi.id="8wl2G5kl8rLu" visibility="private"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_Bavg" xmi.id="9nkNYqTWOgUG" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_Mavg" xmi.id="177kyEI6836O" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_Tavg" xmi.id="6r7FgS7pFrAl" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+        <UML:Operation isAbstract="false" isSpecification="false" name="get_valid_points" xmi.id="fdG4KkKJqP1o" isLeaf="false" isQuery="false" isRoot="false" visibility="public"/>
+       </UML:Classifier.feature>
+      </UML:Class>
+     </UML:Namespace.ownedElement>
+     <XMI.extension xmi.extender="umbrello">
+      <diagrams>
+       <diagram showattribassocs="1" name="class diagram" textcolor="#000000" showops="1" usefillcolor="1" griddotcolor="#000000" font="DejaVu Sans,12,-1,0,50,0,0,0,0,0" xmi.id="38OKbQpxfm3Y" fillcolor="#ffffff" linewidth="1" localid="-1" showopsig="1" showattsig="1" snapgrid="0" canvasheight="1260.96" showpubliconly="1" snapcsgrid="0" showscope="1" canvaswidth="1000" type="1" showpackage="1" documentation="" linecolor="#000000" showgrid="0" showatts="1" zoom="70,75705764488978" snapy="25" backgroundcolor="#ffffff" showstereotype="1" snapx="25" isopen="1">
+        <widgets>
+         <classwidget showoperations="1" textcolor="#000000" x="-1028" usefillcolor="1" isinstance="0" font="DejaVu Sans,12,-1,5,50,0,0,0,0,0" xmi.id="Kc7CcVLUtJ7u" showattsigs="601" fillcolor="#ffffff" width="1000" localid="jy7iwl4a6c69" linewidth="0" showpubliconly="1" usesdiagramfillcolor="0" showopsigs="601" showscope="1" y="-628.034" showpackage="1" usesdiagramusefillcolor="0" height="532" linecolor="#000000" showattributes="1" showstereotype="1"/>
+         <classwidget showoperations="1" textcolor="#000000" x="-914.854" usefillcolor="1" isinstance="0" font="DejaVu Sans,12,-1,5,50,0,0,0,0,0" xmi.id="QOUQ0IZiF5QE" showattsigs="601" fillcolor="#ffffff" width="749" localid="guvQr2i1FA87" linewidth="0" showpubliconly="1" usesdiagramfillcolor="0" showopsigs="601" showscope="1" y="-8.09748" showpackage="1" usesdiagramusefillcolor="0" height="551" linecolor="#000000" showattributes="1" showstereotype="1"/>
+         <classwidget showoperations="1" textcolor="#000000" x="-567.383" usefillcolor="1" isinstance="0" font="DejaVu Sans,12,-1,0,50,0,0,0,0,0" xmi.id="9ltR32HpdIZq" showattsigs="601" fillcolor="#ffffff" width="61" localid="EaJfAzmtxtbr" linewidth="0" showpubliconly="1" usesdiagramfillcolor="0" showopsigs="601" showscope="1" y="-712.406" showpackage="1" usesdiagramusefillcolor="0" height="37" linecolor="#000000" showattributes="1" showstereotype="1"/>
+        </widgets>
+        <messages/>
+        <associations>
+         <assocwidget fillcolor="#ffffff" indexa="1" totalcountb="2" usesdiagramfillcolor="0" linecolor="#000000" type="500" usefillcolor="1" textcolor="#000000" linewidth="0" font="DejaVu Sans,9,-1,0,50,0,0,0,0,0" totalcounta="2" usesdiagramusefillcolor="0" xmi.id="aC8FRx9ag02j" widgetbid="Kc7CcVLUtJ7u" seqnum="" widgetaid="9ltR32HpdIZq" indexb="1">
+          <linepath layout="Polyline">
+           <startpoint startx="-534.672" starty="-675.406"/>
+           <endpoint endy="-628.034" endx="-534.672"/>
+          </linepath>
+         </assocwidget>
+         <assocwidget changeabilityA="900" visibilityA="0" textcolor="#000000" totalcounta="2" usefillcolor="1" font="DejaVu Sans,9,-1,0,50,0,0,0,0,0" xmi.id="zjINTadCas9k" seqnum="" indexa="1" fillcolor="#ffffff" linewidth="1" indexb="1" usesdiagramfillcolor="0" widgetaid="Kc7CcVLUtJ7u" visibilityB="0" totalcountb="2" type="510" usesdiagramusefillcolor="0" linecolor="#000000" widgetbid="QOUQ0IZiF5QE" changeabilityB="900">
+          <linepath layout="Polyline">
+           <startpoint startx="-530.264" starty="-96.034"/>
+           <endpoint endy="-8.09748" endx="-530.264"/>
+          </linepath>
+          <floatingtext posttext="" textcolor="#000000" x="-524.25" usefillcolor="1" isinstance="0" font="DejaVu Sans,12,-1,0,50,0,0,0,0,0" xmi.id="p8k0chPbRfxs" text="data_container" fillcolor="#ffffff" width="141" localid="HC5DX5KorI3V" linewidth="0" role="710" usesdiagramfillcolor="0" y="-32.75" usesdiagramusefillcolor="0" height="23" pretext="+" linecolor="#000000" showstereotype="1"/>
+         </assocwidget>
+        </associations>
+       </diagram>
+      </diagrams>
+     </XMI.extension>
+    </UML:Model>
+    <UML:Model stereotype="folder" isAbstract="false" namespace="m1" isSpecification="false" name="Use Case View" xmi.id="Use Case View" isLeaf="false" isRoot="false" visibility="public">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" isAbstract="false" namespace="m1" isSpecification="false" name="Component View" xmi.id="Component View" isLeaf="false" isRoot="false" visibility="public">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" isAbstract="false" namespace="m1" isSpecification="false" name="Deployment View" xmi.id="Deployment View" isLeaf="false" isRoot="false" visibility="public">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" isAbstract="false" namespace="m1" isSpecification="false" name="Entity Relationship Model" xmi.id="Entity Relationship Model" isLeaf="false" isRoot="false" visibility="public">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+   </UML:Namespace.ownedElement>
+  </UML:Model>
+ </XMI.content>
+ <XMI.extensions xmi.extender="umbrello">
+  <docsettings viewid="38OKbQpxfm3Y" uniqueid="Gf777HfGo5z9" documentation=""/>
+  <listview>
+   <listitem id="Views" open="1" type="800">
+    <listitem id="Component View" open="1" type="821"/>
+    <listitem id="Deployment View" open="1" type="827"/>
+    <listitem id="Entity Relationship Model" open="1" type="836"/>
+    <listitem id="Logical View" open="1" type="801">
+     <listitem id="Mlrj4ZGDBf4b" open="1" type="813"/>
+     <listitem id="0aoJVHyIpFxa" open="1" type="813"/>
+     <listitem id="9ltR32HpdIZq" open="0" type="813"/>
+     <listitem id="QOUQ0IZiF5QE" open="1" type="813">
+      <listitem id="5wJ9sVALi1bQ" open="0" type="815"/>
+      <listitem id="ojellF3SlGfb" open="0" type="814"/>
+      <listitem id="y6tN8couJSd4" open="0" type="814"/>
+      <listitem id="hgOE6Reegpvo" open="0" type="815"/>
+      <listitem id="5sCC3sEoZS5P" open="0" type="815"/>
+      <listitem id="9qJbnkvFD68M" open="0" type="814"/>
+      <listitem id="V5zoVatBFObC" open="0" type="814"/>
+      <listitem id="qHB2uQj2P1iS" open="0" type="814"/>
+      <listitem id="uWdtRuyuyxgT" open="0" type="814"/>
+      <listitem id="VZckvEuRlDer" open="0" type="814"/>
+      <listitem id="q1ptmXHiGjUJ" open="0" type="815"/>
+      <listitem id="TVSAa9tyFVx7" open="0" type="815"/>
+      <listitem id="igkwOEFnNKkk" open="0" type="815"/>
+      <listitem id="ckWUOhnrCFzm" open="0" type="815"/>
+      <listitem id="DA4aTnK9j7gl" open="0" type="815"/>
+      <listitem id="og8IZFABxfdL" open="0" type="815"/>
+      <listitem id="eLYY26qokx6J" open="0" type="815"/>
+      <listitem id="ntZShSGgoasO" open="0" type="815"/>
+      <listitem id="n0hJmjSBRog1" open="0" type="814"/>
+      <listitem id="EPZCzw3w1vH7" open="0" type="814"/>
+      <listitem id="tb0kEpw0nbJZ" open="0" type="814"/>
+      <listitem id="EXYwYiOMxaNr" open="0" type="814"/>
+      <listitem id="dBx0rq0pu1Pd" open="0" type="815"/>
+      <listitem id="8nq5xfFFlnsf" open="0" type="815"/>
+      <listitem id="yzKB2kN8ehHV" open="0" type="815"/>
+      <listitem id="crYLdO0L9Ai1" open="0" type="815"/>
+      <listitem id="fgXQxC09hY3D" open="0" type="814"/>
+      <listitem id="YZJF6MSKlzUj" open="0" type="814"/>
+     </listitem>
+     <listitem id="hQNmLKQu65g1" open="1" type="813">
+      <listitem id="ppuSMxzDndxX" open="0" type="815"/>
+      <listitem id="gccYtZhUxl9O" open="0" type="814"/>
+      <listitem id="Ad85sqUZQ47H" open="0" type="814"/>
+      <listitem id="ciTmvSIMInSp" open="0" type="815"/>
+      <listitem id="TsV8X0GThT1Q" open="0" type="815"/>
+      <listitem id="GlYYVRxDsIxB" open="0" type="814"/>
+      <listitem id="icO8hTQJE9sm" open="0" type="814"/>
+      <listitem id="zGv4vAj9vHhR" open="0" type="814"/>
+      <listitem id="rqemkmbSOxY3" open="0" type="814"/>
+      <listitem id="OwMd6CP4zAha" open="0" type="814"/>
+      <listitem id="PhW7nBjO9iGq" open="0" type="815"/>
+      <listitem id="9nkNYqTWOgUG" open="0" type="815"/>
+      <listitem id="0QHGpHpEwLKk" open="0" type="815"/>
+      <listitem id="177kyEI6836O" open="0" type="815"/>
+      <listitem id="0aD0sKdsls7Y" open="0" type="815"/>
+      <listitem id="6r7FgS7pFrAl" open="0" type="815"/>
+      <listitem id="fdG4KkKJqP1o" open="0" type="815"/>
+      <listitem id="3Z5NL2hvk8he" open="0" type="815"/>
+      <listitem id="8hSLptMj5fHg" open="0" type="814"/>
+      <listitem id="hyOmwJl6wuAp" open="0" type="814"/>
+      <listitem id="bN5fTjgZQ8uE" open="0" type="814"/>
+      <listitem id="Unxttr5s50w1" open="0" type="814"/>
+      <listitem id="QmMqwpKGfsYe" open="0" type="815"/>
+      <listitem id="vwcXT93nxqkf" open="0" type="815"/>
+      <listitem id="PWxmTVpsSATW" open="0" type="815"/>
+      <listitem id="whEakzUev69M" open="0" type="815"/>
+      <listitem id="enlZYsv2fstW" open="0" type="814"/>
+      <listitem id="0nnddgAKdY4Z" open="0" type="814"/>
+     </listitem>
+     <listitem id="Kc7CcVLUtJ7u" open="1" type="813">
+      <listitem id="ue4ae4HeJnIq" open="0" type="815"/>
+      <listitem id="O84Q5ZsyBuWp" open="0" type="815"/>
+      <listitem id="6I1VyGpaI6bU" open="0" type="815"/>
+      <listitem id="zjINTadCas9k" open="0" type="814"/>
+      <listitem id="1D6y889O14Yo" open="0" type="815"/>
+      <listitem id="cpFf8ybQxv2C" open="0" type="815"/>
+      <listitem id="14CXfmi2F5cR" open="0" type="815"/>
+      <listitem id="vqIiJtbyZWKz" open="0" type="815"/>
+      <listitem id="Bs9cG2JAyMW2" open="0" type="815"/>
+      <listitem id="f7Wca54lBZNs" open="0" type="815"/>
+      <listitem id="bWqJYwOswsY9" open="0" type="815"/>
+      <listitem id="M2UiDPk80nGf" open="0" type="815"/>
+      <listitem id="VJG3YO63TOvj" open="0" type="815"/>
+      <listitem id="dygBU0AaaHA3" open="0" type="815"/>
+      <listitem id="fHTedxgDzTaS" open="0" type="815"/>
+      <listitem id="sO6a4ZvhgPJE" open="0" type="815"/>
+      <listitem id="fsi5woysIkke" open="0" type="815"/>
+      <listitem id="vQnmwlABnysb" open="0" type="815"/>
+      <listitem id="Fa4pQDXfOctt" open="0" type="814"/>
+      <listitem id="XX7TXrh2d7bo" open="0" type="815"/>
+      <listitem id="XmRaDZn5xtf0" open="0" type="815"/>
+      <listitem id="I1MeFNsktxBO" open="0" type="815"/>
+      <listitem id="6taIn65jsXyQ" open="0" type="815"/>
+      <listitem id="NSFAO8m5RgEK" open="0" type="815"/>
+      <listitem id="ey0u5aOzWcZB" open="0" type="815"/>
+      <listitem id="tUjhFtDoP48v" open="0" type="815"/>
+      <listitem id="ixWhz2W74yD1" open="0" type="815"/>
+     </listitem>
+     <listitem id="38OKbQpxfm3Y" open="0" type="807" label="class diagram"/>
+     <listitem id="Datatypes" open="0" type="830">
+      <listitem id="W5aPuGOla1IM" open="1" type="829"/>
+      <listitem id="hNNEZUTE0c0I" open="1" type="829"/>
+      <listitem id="bAqHwrn1DRcW" open="1" type="829"/>
+      <listitem id="GrGy0Bp3JDNt" open="1" type="829"/>
+      <listitem id="FNBYHvwxIK9p" open="1" type="829"/>
+      <listitem id="9iJRvhKUrAjm" open="1" type="829"/>
+      <listitem id="sMqKb1jahREt" open="1" type="829"/>
+      <listitem id="sW1TVHnMddgC" open="1" type="829"/>
+      <listitem id="TE86II4nMeAG" open="1" type="829"/>
+      <listitem id="AbivjTlxI0vI" open="1" type="829"/>
+      <listitem id="6MebLl1Ek9lq" open="1" type="829"/>
+      <listitem id="tlb9jUStAlK3" open="1" type="829"/>
+      <listitem id="mc3mF23Hu0O9" open="1" type="829"/>
+      <listitem id="tP0f1H5GeGow" open="1" type="829"/>
+      <listitem id="1XlCwLj7vR0e" open="1" type="829"/>
+      <listitem id="eueQfe6kKulO" open="1" type="829"/>
+      <listitem id="4sz9Ft1todJR" open="1" type="829"/>
+      <listitem id="QeXGoH0nmlzi" open="1" type="829"/>
+      <listitem id="eY9oITrg5Pwr" open="1" type="829"/>
+      <listitem id="6gn16ndzXC8G" open="1" type="829"/>
+     </listitem>
+     <listitem id="dOEz1MEtsDMN" open="1" type="813"/>
+     <listitem id="EuLk2hlR12dZ" open="1" type="813"/>
+    </listitem>
+    <listitem id="Use Case View" open="1" type="802"/>
+   </listitem>
+  </listview>
+  <codegeneration>
+   <codegenerator language="Python">
+    <sourcecode id="ue4ae4HeJnIq" value="self.data_container=CFMSData()&#xa;self.log=''&#xa;"/>
+    <sourcecode id="O84Q5ZsyBuWp" value="self.log+= '#' + entry + '\n';"/>
+    <sourcecode id="6taIn65jsXyQ" value="self.add_log(entry)&#xa;print(entry)&#xa;"/>
+    <sourcecode id="vQnmwlABnysb" value="self.data_container.data_path=data_path&#xa;datafile=open(data_path,&quot;r&quot;)&#xa;self.print_log(&quot;Loading data from &quot;+str(data_path))&#xa;header=datafile.readline().rstrip().split()&#xa;data=:&#xa;&#xa;&#xa;self.print_log(&quot;&quot;)&#xa;self.print_log(&quot;Found columns:&quot;)&#xa;for datahead in header:&#xa;  self.print_log(str(datahead))&#xa;  data[datahead]=[]&#xa;&#xa;for line in datafile:&#xa;  linestrip=line.strip()&#xa;  if linestrip.startswith(&quot;;continue split_line=linestrip.split()&#xa;  for i,val in enumerate(split_line):&#xa;    data[header[i]].append(float(val))&#xa;&#xa;&#xa;datafile.close()&#xa;self.print_log(&quot;&quot;)&#xa;for datahead in data:&#xa;  data[datahead]=np.asarray(data[datahead])&#xa;&#xa;if&quot;moment_(emu)&quot;in data:&#xa;  data[&quot;moment_(emu)&quot;]*=1e3&#xa;  self.print_log(&quot;Transformed data from column 'moment_(emu)' &quot;+\&#xa;  &quot;from emu to memu by multiplication with 1000.&quot;)&#xa;self.data_container.set_data(header,data)&#xa;self.print_log(&quot;Loaded &quot;+str(self.data_container.N_pts)+\&#xa;&quot; datapoints.&quot;)"/>
+    <sourcecode id="NSFAO8m5RgEK" value="self.print_log(&quot;Averaging data, combining every &quot;+str(N_averages)+\&#xa;&quot; points.&quot;)B_avg=[]&#xa;sB_avg=[]&#xa;M_avg=[]&#xa;sM_avg=[]&#xa;T_avg=[]&#xa;sT_avg=[]&#xa;B=self.data_container.get_B()&#xa;M=self.data_container.get_M()&#xa;T=self.data_container.get_T()&#xa;n_pts=len(B)&#xa;for i in range(0,n_pts,N_averages):&#xa;  cur_b_avg=B[i:i+N_averages]&#xa;  cur_m_avg=M[i:i+N_averages]&#xa;  cur_t_avg=T[i:i+N_averages]&#xa;  if len(cur_b_avg)!=N_averages or\&#xa;  len(cur_m_avg)!=N_averages or\len(cur_t_avg)!=N_averages:&#xa;    self.print_log(&quot;Skipped line &quot;+str(i)+\&#xa;    &quot;: Does not commensurate.&quot;)continue&#xa;&#xa;  B_avg.append(np.mean(cur_b_avg))&#xa;  sB_avg.append(np.std(cur_b_avg,ddof=1))&#xa;  M_avg.append(np.mean(cur_m_avg))&#xa;  sM_avg.append(np.std(cur_m_avg,ddof=1))&#xa;  T_avg.append(np.mean(cur_t_avg))&#xa;  sT_avg.append(np.std(cur_t_avg,ddof=1))&#xa;&#xa;B_avg=np.asarray(B_avg)&#xa;sB_avg=np.asarray(sB_avg)&#xa;M_avg=np.asarray(M_avg)&#xa;sM_avg=np.asarray(sM_avg)&#xa;T_avg=np.asarray(T_avg)&#xa;sT_avg=np.asarray(sT_avg)&#xa;self.data_container.set_averaged_data(N_averages,\&#xa;(B_avg,sB_avg),\(T_avg,sT_avg),\(M_avg,sM_avg))self.print_log(&quot;Average data contains &quot;+\&#xa;str(self.data_container.N_pts_averaged)+\&quot; data points.&quot;)"/>
+    <sourcecode id="6I1VyGpaI6bU" value="''';Cleans data by forming for every point the median with npts_mean&#xa;points surrounding it(median filter).Data points which are more distant&#xa;than threshold are marked for cleaning.&#xa;''';self.print_log(&quot;Cleaning data lists from spurious peaks.&quot;)&#xa;B,M=self.get_BM(get_all_points=True,supress_log=True)&#xa;T=self.data_container.get_T(get_all_points=True)&#xa;M_mean=spsig.medfilt(M,M_npts_mean)&#xa;M_diff=M-M_mean&#xa;M_peak_outlier=np.abs(M_diff)>M_threshold&#xa;invalid_points=M_peak_outlier&#xa;if not TM_mode:&#xa;  B_mean=spsig.medfilt(B,B_npts_mean)&#xa;  B_diff=B-B_mean&#xa;  B_peak_outlier=np.abs(B_diff)>B_threshold&#xa;  invalid_points=np.logical_or(invalid_points,B_peak_outlier)&#xa;&#xa;B_masked=B[invalid_points]&#xa;M_masked=M[invalid_points]&#xa;T_masked=T[invalid_points]&#xa;B_clean=B[-invalid_points]&#xa;M_clean=M[-invalid_points]&#xa;T_clean=T[-invalid_points]&#xa;if show:&#xa;  self.fig,self.ax=plt.subplots()&#xa;  self.ax.axhline(0,c='gray')&#xa;  if TM_mode:&#xa;    self.ax.plot(T,M,label='Raw Data',color='blue',marker='.',ls='None')&#xa;    self.ax.plot(T,M_mean,label='Mean Data',marker='None',\&#xa;    ls='-',color='black')with warnings.catch_warnings():&#xa;      warnings.filterwarnings(&quot;ignore&quot;,module=&quot;matplotlib&quot;)&#xa;      self.ax.plot(T_masked,M_masked,label='Masked Points',color='red',\&#xa;      ls='None',marker='$^\circ$',markersize=10)self.ax.set_xlabel(&quot;$ \mathit{T} \, / \, K$&quot;)&#xa;&#xa;&#xa;  else:&#xa;    self.ax.plot(B,M,label='Raw Data',color='blue',marker='.',ls='None')&#xa;    self.ax.plot(B_mean,M_mean,label='Mean Data',marker='None',\&#xa;    ls='-',color='black')with warnings.catch_warnings():&#xa;      warnings.filterwarnings(&quot;ignore&quot;,module=&quot;matplotlib&quot;)&#xa;      self.ax.plot(B_masked,M_masked,label='Masked Points',color='red',\&#xa;      ls='None',marker='$^\circ$',markersize=10)self.ax.set_xlabel(&quot;$ \mathit{\mu_0 H} \, / \, T$&quot;)&#xa;&#xa;&#xa;  self.ax.set_ylabel(&quot;$ \mathit{M} \, / \, memu$&quot;)&#xa;  self.ax.legend(loc='best')&#xa;  self.fig.tight_layout()&#xa;&#xa;self.data_container.set_data_invalid(invalid_points)&#xa;self.print_log('Set array for validated points')&#xa;"/>
+    <sourcecode id="ey0u5aOzWcZB" value="B=self.data_container.get_B(get_all_points=True)&#xa;valid_point=np.ones(len(B),dtype=bool)&#xa;if up_to>0:&#xa;  for ib,b_val in enumerate(B):&#xa;    if b_val&lt;up_to:&#xa;      valid_point[ib]=False&#xa;&#xa;    else:&#xa;      break&#xa;&#xa;&#xa;&#xa;else:&#xa;  for ib,b_val in enumerate(B):&#xa;    if b_val>up_to:&#xa;      valid_point[ib]=False&#xa;&#xa;    else:&#xa;      break&#xa;&#xa;&#xa;&#xa;self.data_container.set_data_invalid(-valid_point)&#xa;"/>
+    <sourcecode id="14CXfmi2F5cR" value="B,M=self.get_BM(supress_log=True)&#xa;fit_range=np.logical_and(B0&lt;B,B&lt;B1)&#xa;B_fit=B[fit_range]&#xa;M_fit=M[fit_range]&#xa;if m_init is None:&#xa;  m_init=(M_fit[-1]-M_fit[0])/(B_fit[-1]-B_fit[0])&#xa;&#xa;if b_init is None:&#xa;  b_init=M_fit[0]-B_fit[0]*m_init&#xa;&#xa;linear_model=lambda m,b,B_lin:m*B_lin+b&#xa;def fit_between(B_fit,M_fit,m_init,b_init):&#xa;  linear_residuum=lambda p:linear_model(p['m'],p['b'],B_fit)-M_fit&#xa;  p=lmfit.Parameters()&#xa;  p.add(&quot;m&quot;,m_init,vary=vary_m)&#xa;  p.add(&quot;b&quot;,b_init,vary=vary_b)&#xa;  self.print_log(&quot;Running linear fit between B=(&quot;+\&#xa;  str(min(B_fit))+' .. '+str(max(B_fit))+&quot;) with LM algorithm.&quot;)fit_result=lmfit.minimize(linear_residuum,p)&#xa;  self.print_log(lmfit.fit_report(fit_result))&#xa;  return fit_result&#xa;&#xa;fit_result=fit_between(B_fit,M_fit,m_init,b_init)&#xa;if fit_both_sides:&#xa;  fit_range2=np.logical_and(-B1&lt;B,B&lt;-B0)&#xa;  B_fit2=B[fit_range2]&#xa;  M_fit2=M[fit_range2]&#xa;  fit_result2=fit_between(B_fit2,M_fit2,\&#xa;  fit_result.params['m'],\-fit_result.params['b'])m1=fit_result.params['m']&#xa;  m2=fit_result2.params['m']&#xa;  b1=fit_result.params['b']&#xa;  b2=fit_result2.params['b']&#xa;  pts1=fit_result.ndata&#xa;  pts2=fit_result2.ndata&#xa;  mean_slope=(m1.value*pts1+m2.value*pts2)/(pts1+pts2)&#xa;  mean_slope_std=np.sqrt((m1.stderr*pts1)**2+(m2.stderr*pts2)**2)/\&#xa;  (pts1+pts2)mean_offset=(b1.value*pts1-b2.value*pts2)/(pts1+pts2)&#xa;  mean_offset_std=np.sqrt((b1.stderr*pts1)**2+(b2.stderr*pts2)**2)/\&#xa;  (pts1+pts2)fit_result.params['m'].value=mean_slope&#xa;  fit_result.params['m'].stderr=mean_slope_std&#xa;  fit_result.params['b'].value=mean_offset&#xa;  fit_result.params['b'].stderr=mean_offset_std&#xa;&#xa;self.data_container.set_diamagnetic_fit(fit_result)&#xa;if show:&#xa;  self.fig,self.ax=plt.subplots()&#xa;  self.ax.axhline(0,c='gray')&#xa;  self.ax.plot(B,M,label='Data',color='gray',marker='.',ls='None')&#xa;  self.ax.plot(B_fit,M_fit,label='Fit Region',marker='.',\&#xa;  ls='None',color='red')self.ax.plot(B,linear_model(fit_result.params['m'],\&#xa;  fit_result.params['b'],B),\label='Linear Fit',marker='None',\ls='-',color='black')if fit_both_sides:&#xa;    self.ax.plot(B_fit2,M_fit2,marker='.',\&#xa;    ls='None',color='red')self.ax.plot(B,linear_model(fit_result.params['m'],\&#xa;    -fit_result.params['b'],B),\marker='None',\ls='-',color='black')&#xa;  self.ax.set_xlabel(&quot;$ \mu_0 \mathit{ H} \, / \, T$&quot;)&#xa;  self.ax.set_ylabel(&quot;$ \mathit{M} \, / \, memu$&quot;)&#xa;  self.ax.legend(loc='best')&#xa;  self.fig.tight_layout()&#xa;&#xa;"/>
+    <sourcecode id="M2UiDPk80nGf" value="return self.data_container.diamagnetic_fit.params['m']&#xa;"/>
+    <sourcecode id="bWqJYwOswsY9" value="return self.data_container.diamagnetic_fit.params['b']&#xa;"/>
+    <sourcecode id="tUjhFtDoP48v" value="return self.data_container.diamagnetic_fit.params['b']&#xa;"/>
+    <sourcecode id="fsi5woysIkke" value="if not supress_log:&#xa;  self.print_log('Loading '+string)&#xa;&#xa;data=self.data_container.get(string,get_all_points)&#xa;return data&#xa;"/>
+    <sourcecode id="vqIiJtbyZWKz" value="return self.get(self.data_container.B_string,get_all_points,supress_log)&#xa;"/>
+    <sourcecode id="dygBU0AaaHA3" value="return self.get(self.data_container.T_string,get_all_points,supress_log)&#xa;"/>
+    <sourcecode id="VJG3YO63TOvj" value="return self.get(self.data_container.M_string,get_all_points,supress_log)&#xa;"/>
+    <sourcecode id="Bs9cG2JAyMW2" value="if not supress_log:&#xa;  self.print_log('Loading '+self.data_container.B_string+' and '+\&#xa;  self.data_container.M_string)&#xa;B=self.data_container.get_B(get_all_points)&#xa;M=self.data_container.get_M(get_all_points)&#xa;return B,M&#xa;"/>
+    <sourcecode id="fHTedxgDzTaS" value="if not supress_log:&#xa;  self.print_log('Loading '+self.data_container.T_string+' and '+\&#xa;  self.data_container.M_string)&#xa;T=self.data_container.get_T(get_all_points)&#xa;M=self.data_container.get_M(get_all_points)&#xa;return T,M&#xa;"/>
+    <sourcecode id="f7Wca54lBZNs" value="B,sB=self.data_container.get_Bavg()&#xa;M,sM=self.data_container.get_Mavg()&#xa;return B,sB,M,sM&#xa;"/>
+    <sourcecode id="sO6a4ZvhgPJE" value="T,sT=self.data_container.get_Tavg()&#xa;M,sM=self.data_container.get_Mavg()&#xa;return T,sT,M,sM&#xa;"/>
+    <sourcecode id="XmRaDZn5xtf0" value="self.fig,self.ax=plt.subplots()&#xa;B,M=self.get_BM()&#xa;self.ax.plot(B,M)&#xa;self.ax.set_xlabel(&quot;$ \mathit{B} \, / \, T$&quot;)&#xa;self.ax.set_ylabel(&quot;$ \mathit{M} \, / \, memu$&quot;)&#xa;self.fig.tight_layout()&#xa;saveplot=self.data_container.data_path.rsplit(&quot;.&quot;,1)[0]+&quot;_BM.png&quot;&#xa;self.fig.saveself.fig(saveplot)&#xa;print(&quot;Saved plot to &quot;+saveplot)&#xa;"/>
+    <sourcecode id="XX7TXrh2d7bo" value="self.fig,self.ax=plt.subplots()&#xa;B,sB,M,sM=self.get_BMavg()&#xa;valid_points=sM/M&lt;1e-1&#xa;B=B[valid_points]&#xa;sB=sB[valid_points]&#xa;M=M[valid_points]&#xa;sM=sM[valid_points]&#xa;self.ax.errorbar(B,M,xerr=sB,yerr=sM)&#xa;self.ax.set_xlabel(&quot;$ \mathit{B} \, / \, T$&quot;)&#xa;self.ax.set_ylabel(&quot;$ \mathit{M} \, / \, memu$&quot;)&#xa;self.fig.tight_layout()&#xa;saveplot=self.data_container.data_path.rsplit(&quot;.&quot;,1)[0]+&quot;_BMavg.png&quot;&#xa;self.fig.saveself.fig(saveplot)&#xa;print(&quot;Saved plot to &quot;+saveplot)&#xa;"/>
+    <sourcecode id="I1MeFNsktxBO" value="self.fig,self.ax=plt.subplots()&#xa;T,M=self.get_TM()&#xa;self.ax.plot(T,M)&#xa;self.ax.set_xlabel(&quot;$ \mathit{T} \, / \, K$&quot;)&#xa;self.ax.set_ylabel(&quot;$ \mathit{M} \, / \, memu$&quot;)&#xa;self.fig.tight_layout()&#xa;saveplot=self.data_container.data_path.rsplit(&quot;.&quot;,1)[0]+&quot;_TM.png&quot;&#xa;self.fig.saveself.fig(saveplot)&#xa;print(&quot;Saved plot to &quot;+saveplot)&#xa;"/>
+    <sourcecode id="cpFf8ybQxv2C" value="if export_file is None:&#xa;  export_file=self.data_container.data_path.rsplit(&quot;.&quot;,1)[0]+&quot;_extracted.xye&quot;&#xa;&#xa;B=self.get_B(get_all_points=True,supress_log=True)&#xa;M=self.get_M(get_all_points=True,supress_log=True)&#xa;T=self.get_T(get_all_points=True,supress_log=True)&#xa;valid_points=self.data_container.get_valid_points()&#xa;self.print_log(&quot;Exporting data to &quot;+export_file)&#xa;savefile=open(export_file,&quot;w&quot;)&#xa;savefile.write(self.log)&#xa;savefile.write(&quot;;for i in range(len(B)):&#xa;  if not valid_points[i]:&#xa;    savefile.write(';&#xa;  savefile.write(str(B[i])+&quot;\t&quot;+\&#xa;  str(M[i])+&quot;\t&quot;+\str(T[i])+&quot;\n&quot;)&#xa;savefile.close()&#xa;"/>
+    <sourcecode id="1D6y889O14Yo" value="if export_file is None:&#xa;  export_file=self.data_container.data_path.rsplit(&quot;.&quot;,1)[0]+&quot;_extracted.xye&quot;&#xa;&#xa;B,sB=self.get_Bavg()&#xa;M,sM=self.get_Mavg()&#xa;T,sT=self.get_Tavg()&#xa;self.print_log(&quot;Export averaged data to &quot;+export_file)&#xa;savefile=open(export_file,&quot;w&quot;)&#xa;savefile.write(self.log)&#xa;savefile.write(&quot;;for i in range(self.data_container.N_pts_avg):&#xa;  savefile.write(str(B[i])+&quot;\t&quot;+\&#xa;  str(sB[i])+&quot;\t&quot;+\str(M[i])+&quot;\t&quot;+\str(sM[i])+&quot;\t&quot;+\str(T[i])+&quot;\t&quot;+\str(sT[i])+&quot;\n&quot;)&#xa;savefile.close()&#xa;"/>
+    <sourcecode id="5wJ9sVALi1bQ" value="self.data_path=''&#xa;self.header=[]&#xa;self.data=:&#xa;&#xa;&#xa;self.N_pts=0&#xa;self.data_loaded=False&#xa;self.averaged_data=:&#xa;&#xa;&#xa;self.N_pts_averaged=0&#xa;self.N_averages=1&#xa;self.B_string='B_analog_(T)'&#xa;self.T_string='sensor_B_(K)'&#xa;self.M_string='moment_(emu)'&#xa;self.data_averaged=False&#xa;self.valid_point=None&#xa;self.diamagnetic_fit=None&#xa;self.do_diamagnetic_correction=False&#xa;"/>
+    <sourcecode id="yzKB2kN8ehHV" value="self.header=header&#xa;self.data=data&#xa;self.N_pts=len(data[header[0]])&#xa;self.valid_point=np.ones(self.N_pts,dtype=bool)&#xa;self.data_loaded=True&#xa;"/>
+    <sourcecode id="dBx0rq0pu1Pd" value="self.N_averages=N_averages&#xa;self.averaged_data[self.B_string]=Bavg&#xa;self.averaged_data[self.T_string]=Tavg&#xa;self.averaged_data[self.M_string]=Mavg&#xa;self.N_pts_averaged=len(self.averaged_data[self.B_string][0])&#xa;self.data_averaged=True&#xa;"/>
+    <sourcecode id="8nq5xfFFlnsf" value="if len(invalid_points)!=self.N_pts:&#xa;  print('WARNING: Trying to set data (Pts: '+str(self.N_pts)+\&#xa;  ') invalid with array that has length '+\str(len(invalid_points)))&#xa;self.valid_point=np.logical_and(self.valid_point,-invalid_points)&#xa;"/>
+    <sourcecode id="crYLdO0L9Ai1" value="self.diamagnetic_fit=diamagnetic_fit&#xa;self.do_diamagnetic_correction=True&#xa;"/>
+    <sourcecode id="5sCC3sEoZS5P" value="if not data_string in self.data:&#xa;  sys.exit(&quot;ERROR: Unable to find &quot;+data_string+&quot; in data.&quot;)&#xa;&#xa;"/>
+    <sourcecode id="hgOE6Reegpvo" value="if not data_string in self.averaged_data:&#xa;  sys.exit(&quot;ERROR: Unable to find &quot;+data_string+&quot; in averaged data.&quot;)&#xa;&#xa;"/>
+    <sourcecode id="ntZShSGgoasO" value="self.check_data_loaded(string)&#xa;if get_all_points:&#xa;  return self.data[string]&#xa;&#xa;else:&#xa;  return self.data[string][self.valid_point]&#xa;&#xa;"/>
+    <sourcecode id="q1ptmXHiGjUJ" value="return self.get(self.B_string)&#xa;"/>
+    <sourcecode id="igkwOEFnNKkk" value="self.check_data_loaded(self.M_string)&#xa;if get_all_points:&#xa;  M_values=self.data[self.M_string]&#xa;&#xa;else:&#xa;  M_values=self.data[self.M_string][self.valid_point]&#xa;&#xa;if self.do_diamagnetic_correction:&#xa;  M_values-=self.diamagnetic_fit.params['m'].value*\&#xa;  self.get_B(get_all_points)&#xa;return M_values&#xa;"/>
+    <sourcecode id="DA4aTnK9j7gl" value="return self.get(self.T_string)&#xa;"/>
+    <sourcecode id="TVSAa9tyFVx7" value="self.check_average_data_loaded(self.B_string)&#xa;return self.averaged_data[self.B_string]&#xa;"/>
+    <sourcecode id="ckWUOhnrCFzm" value="self.check_average_data_loaded(self.M_string)&#xa;return self.averaged_data[self.M_string]&#xa;"/>
+    <sourcecode id="og8IZFABxfdL" value="self.check_average_data_loaded(self.T_string)&#xa;return self.averaged_data[self.T_string]&#xa;"/>
+    <sourcecode id="eLYY26qokx6J" value="return self.valid_point"/>
+   </codegenerator>
+  </codegeneration>
+ </XMI.extensions>
+</XMI>
