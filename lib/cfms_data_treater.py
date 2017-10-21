@@ -109,7 +109,7 @@ class CFMSDataTreater():
                            " data points.")
 
     def clean_peaks(self,\
-                      M_threshold = 20e-3,\
+                      M_threshold = 1,\
                       M_npts_mean = 11,\
                       B_threshold = 0.1,\
                       B_npts_mean = 5,\
