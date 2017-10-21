@@ -7,7 +7,8 @@ import lmfit
 from .cfms_data import CFMSData
 
 class CFMSDataTreater():
-    def __init__(self):
+    def __init__(self):        
+        super(CFMSDataTreater, self).__init__()
         self.data_container = CFMSData()
         self.log = ''
 
@@ -139,30 +140,30 @@ class CFMSDataTreater():
         M_clean = M[~invalid_points]
         T_clean = T[~invalid_points]
         if show:
-            self.fig, self.ax = plt.subplots()
-            self.ax.axhline(0, c='gray')
+            fig, ax = plt.subplots()
+            ax.axhline(0, c='gray')
             if TM_mode:
-                self.ax.plot(T, M, label='Raw Data', color='blue', marker='.', ls='None')
-                self.ax.plot(T, M_mean, label='Mean Data', marker='None',\
+                ax.plot(T, M, label='Raw Data', color='blue', marker='.', ls='None')
+                ax.plot(T, M_mean, label='Mean Data', marker='None',\
                         ls='-', color='black')
                 with warnings.catch_warnings(): #he doesnt like circ and mu in my Ubuntu
                     warnings.filterwarnings("ignore", module="matplotlib")
-                    self.ax.plot(T_masked, M_masked, label='Masked Points', color='red',\
+                    ax.plot(T_masked, M_masked, label='Masked Points', color='red',\
                                     ls='None', marker='$^\circ$', markersize=10)
-                    self.ax.set_xlabel("$ \mathit{T} \, / \, K$")
+                    ax.set_xlabel("$ \mathit{T} \, / \, K$")
             else:
-                self.ax.plot(B, M, label='Raw Data', color='blue', marker='.', ls='None')
-                self.ax.plot(B_mean, M_mean, label='Mean Data', marker='None',\
+                ax.plot(B, M, label='Raw Data', color='blue', marker='.', ls='None')
+                ax.plot(B_mean, M_mean, label='Mean Data', marker='None',\
                         ls='-', color='black')
                 with warnings.catch_warnings(): #he doesnt like circ and mu in my Ubuntu
                     warnings.filterwarnings("ignore", module="matplotlib")
-                    self.ax.plot(B_masked, M_masked, label='Masked Points', color='red',\
+                    ax.plot(B_masked, M_masked, label='Masked Points', color='red',\
                                     ls='None', marker='$^\circ$', markersize=10)
-                    self.ax.set_xlabel("$ \mathit{\mu_0 H} \, / \, T$")
-            self.ax.set_ylabel("$ \mathit{M} \, / \, memu$")
+                    ax.set_xlabel("$ \mathit{\mu_0 H} \, / \, T$")
+            ax.set_ylabel("$ \mathit{M} \, / \, memu$")
             
-            self.ax.legend(loc='best')
-            self.fig.tight_layout()         
+            ax.legend(loc='best')
+            fig.tight_layout()         
         self.data_container.set_data_invalid(invalid_points)
         self.print_log('Set array for validated points')
 
@@ -240,31 +241,31 @@ class CFMSDataTreater():
             fit_result.params['b'].stderr = mean_offset_std
         self.data_container.set_diamagnetic_fit(fit_result)
         if show:
-            self.fig, self.ax = plt.subplots()
-            self.ax.axhline(0, c='gray')
+            fig, ax = plt.subplots()
+            ax.axhline(0, c='gray')
             
-            self.ax.plot(B, M, label='Data', color='gray', marker='.', ls='None')
-            self.ax.plot(B_fit, M_fit, label='Fit Region', marker='.',\
+            ax.plot(B, M, label='Data', color='gray', marker='.', ls='None')
+            ax.plot(B_fit, M_fit, label='Fit Region', marker='.',\
                     ls='None', color='red')
-            self.ax.plot(B, linear_model(fit_result.params['m'],\
+            ax.plot(B, linear_model(fit_result.params['m'],\
                             fit_result.params['b'], B),\
                     label='Linear Fit', marker='None',\
                     ls='-', color='black')
             if fit_both_sides:
-                self.ax.plot(B_fit2, M_fit2, marker='.',\
+                ax.plot(B_fit2, M_fit2, marker='.',\
                     ls='None', color='red')
             
-                self.ax.plot(B, linear_model(fit_result.params['m'],\
+                ax.plot(B, linear_model(fit_result.params['m'],\
                             -fit_result.params['b'], B),\
                     marker='None',\
                     ls='-', color='black')
             
 
-            self.ax.set_xlabel("$ \mu_0 \mathit{ H} \, / \, T$")
-            self.ax.set_ylabel("$ \mathit{M} \, / \, memu$")
+            ax.set_xlabel("$ \mu_0 \mathit{ H} \, / \, T$")
+            ax.set_ylabel("$ \mathit{M} \, / \, memu$")
             
-            self.ax.legend(loc='best')
-            self.fig.tight_layout()         
+            ax.legend(loc='best')
+            fig.tight_layout()         
             
 
     def get_diamagnetic_slope(self):
@@ -322,48 +323,6 @@ class CFMSDataTreater():
         T, sT = self.data_container.get_Tavg()
         M, sM = self.data_container.get_Mavg()
         return T, sT, M, sM
-
-    def plot_B_M(self):
-        self.fig, self.ax = plt.subplots()
-        B, M = self.get_BM()
-        self.ax.plot(B, M)
-        
-        self.ax.set_xlabel("$ \mathit{B} \, / \, T$")
-        self.ax.set_ylabel("$ \mathit{M} \, / \, memu$")
-        self.fig.tight_layout()
-        saveplot = self.data_container.data_path.rsplit(".",1)[0] + "_BM.png"
-        self.fig.saveself.fig(saveplot)
-        print("Saved plot to " + saveplot)
-
-    def plot_B_M_avg(self):
-        self.fig, self.ax = plt.subplots()
-        B, sB, M, sM = self.get_BMavg()
-
-        valid_points = sM/M < 1e-1
-        B = B[valid_points]
-        sB = sB[valid_points]
-        M = M[valid_points]
-        sM = sM[valid_points]
-        self.ax.errorbar(B, M, xerr=sB, yerr=sM)
-        
-        self.ax.set_xlabel("$ \mathit{B} \, / \, T$")
-        self.ax.set_ylabel("$ \mathit{M} \, / \, memu$")
-        self.fig.tight_layout()
-        saveplot = self.data_container.data_path.rsplit(".",1)[0] + "_BMavg.png"
-        self.fig.saveself.fig(saveplot)
-        print("Saved plot to " + saveplot)
-        
-    def plot_T_M(self):
-        self.fig, self.ax = plt.subplots()
-        T, M = self.get_TM()
-        self.ax.plot(T, M)
-        
-        self.ax.set_xlabel("$ \mathit{T} \, / \, K$")
-        self.ax.set_ylabel("$ \mathit{M} \, / \, memu$")
-        self.fig.tight_layout()
-        saveplot = self.data_container.data_path.rsplit(".",1)[0] + "_TM.png"
-        self.fig.saveself.fig(saveplot)
-        print("Saved plot to " + saveplot)
 
     def export(self, export_file=None):
         if export_file is None:
