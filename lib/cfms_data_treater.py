@@ -124,6 +124,7 @@ class CFMSDataTreater():
         self.print_log("Cleaning data lists from spurious peaks.")
         B, M = self.get_BM(get_all_points=True, supress_log=True)
         T = self.data_container.get_T(get_all_points=True)
+
         M_mean = spsig.medfilt(M, M_npts_mean)
         M_diff = M-M_mean
         M_peak_outlier = np.abs(M_diff) > M_threshold
@@ -183,7 +184,7 @@ class CFMSDataTreater():
                     valid_point[ib] = False
                 else:
                     break
-        self.data_container.set_data_invalid(-valid_point)
+        self.data_container.set_data_invalid(~valid_point)
 
     def fit_diamagnetism(self, B0, B1,\
                             m_init=None, b_init=None,\
@@ -297,7 +298,6 @@ class CFMSDataTreater():
         return self.get(self.data_container.T_string, get_all_points, supress_log)
     def get_M(self, get_all_points=False, supress_log=False):
         return self.get(self.data_container.M_string, get_all_points, supress_log)
-    
     def get_BM(self, get_all_points=False, supress_log=False):
         if not supress_log:
             self.print_log('Loading ' + self.data_container.B_string + ' and ' +\
@@ -313,6 +313,13 @@ class CFMSDataTreater():
         T = self.data_container.get_T(get_all_points)
         M = self.data_container.get_M(get_all_points)
         return T, M
+    
+    def get_ACS(self, get_all_points=False, supress_log=False):
+        if not supress_log:
+            self.print_log('Loading ' + self.data_container.ACS_Re_string + ' and ' +\
+                                    self.data_container.ACS_Im_string)
+        ACS_Re, ACS_Im = self.data_container.get_ACS(get_all_points)
+        return ACS_Re, ACS_Im
         
     def get_BMavg(self):
         B, sB = self.data_container.get_Bavg()

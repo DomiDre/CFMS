@@ -15,7 +15,7 @@ class CFMSPlotter():
         self.ax.plot(T, M, label=label, marker=marker)
         self.ax.set_xlabel("$ \mathit{T} \, / \, "+Tunit+"$")
         self.ax.set_ylabel("$ \mathit{M} \, / \, "+Munit+"$")
-        
+    
     def set_xlim(self, xmin=None, xmax=None):
         self.ax.set_xlim(xmin, xmax)
 

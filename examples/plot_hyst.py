@@ -4,7 +4,7 @@ from CFMS.cfms import CFMS
 cfms_data = CFMS()
 cfms_data.load("example_data.dat")
 cfms_data.clean_peaks()
-
+cfms_data.export('extracted_data.xye')
 # Plot data
 B, M = cfms_data.get_BM()
 cfms_data.plot_B_M(B, M)

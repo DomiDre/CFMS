@@ -18,6 +18,8 @@ class CFMSData():
         self.B_string = 'B_analog_(T)'
         self.T_string = 'sensor_B_(K)'
         self.M_string = 'moment_(emu)'
+        self.ACS_Re_string = 'Re(X),_emu/G'
+        self.ACS_Im_string = 'Im(X),_emu/G'
         self.data_averaged = False
 
         self.valid_point = None # Array which points are valid and which not (filled from clean_peaks)
@@ -67,7 +69,7 @@ class CFMSData():
             return self.data[string][self.valid_point]
 
     def get_B(self, get_all_points=False):
-        return self.get(self.B_string)
+        return self.get(self.B_string, get_all_points)
 
     def get_M(self, get_all_points=False):
         self.check_data_loaded(self.M_string)
@@ -75,13 +77,17 @@ class CFMSData():
             M_values = self.data[self.M_string]
         else:
             M_values = self.data[self.M_string][self.valid_point]
+
         if self.do_diamagnetic_correction:
             M_values -= self.diamagnetic_fit.params['m'].value*\
                         self.get_B(get_all_points)
         return M_values
 
+    def get_ACS(self, get_all_points=False):
+        return self.get(self.ACS_Re_string, get_all_points), self.get(self.ACS_Im_string, get_all_points)
+
     def get_T(self, get_all_points=False):
-        return self.get(self.T_string)
+        return self.get(self.T_string, get_all_points)
 
     def get_Bavg(self):
         self.check_average_data_loaded(self.B_string)
